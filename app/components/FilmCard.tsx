@@ -4,8 +4,8 @@ export default function FilmCard({ movie }) {
   const router = useRouter();
   return (
     <div
-      className="border p-10
-      flex flex-col items-center justify-center gap-4 m-4"
+      className="border-1 border-b-slate-100 bg-amber-50 text-black p-10 rounded-2xl
+      flex flex-col items-center justify-center gap-4 m-2"
       onClick={() => {
         router.push(`/movies/${movie.id}`);
       }}
